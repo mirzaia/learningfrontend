@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Belajar Atrribute Selector
+	</title>
+	<style type="text/css">
+		a[href] {
+			text-decoration: none;
+			font-size: 24px;
+			color: blue;
+		}
+
+		a[href^="http://"] {
+			font-weight: bold;
+
+		}
+
+		a[href~="link"] {
+			color: green;
+		}
+
+		a[href$=".pdf"] {
+			color: brown;
+		}
+
+		a[href*="halaman"] {
+			font-style: italic;
+		}
+
+		a[href|="situs"] {
+			color: red;
+		}
+
+
+		 
+	</style>
+</head>
+<body>
+<h2> Jenis-jenis Attribute Selector</h2>
+<br>
+<a href="halaman_saja.html"> 1. Link ke halaman_saja.html</a>
+<br>
+<a href="http://www.epic2018.its.ac.id"> 2. Link ke epic2018.its.ac.id</a>
+<br>
+<a href="halaman_unik.html"> 3. Link ke halaman_unik.html</a>
+<br>
+<a href="http://www.ep.its.ac.id"> 4. Link ke ep.its.ac.id</a>
+<br>
+<a href="halaman_lain.html"> 5. Link ke halaman_lain.html</a>
+<br>
+<a href="halaman_buku/belajar_css.pdf"> 6. Link ke halaman_buku/belajar_css.pdf</a>
+<br>
+<a title="link ke web epic gan!" href="http://www.epic2018.its.ac.id"> 7. Link ke http://www.epic2018.its.ac.id </a>
+
+</body>
+</html>

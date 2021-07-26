@@ -1,0 +1,58 @@
+* {
+	font-family: arial;
+}
+
+.bold_biru {
+	color: blue;
+
+}
+
+p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+.tulisan_kecil1 {
+	font-size: 10px;
+	color: grey;
+}
+
+.bold_hitam {
+	color: black;
+
+}
+
+p {
+
+}
+
+#artikel_utama {
+	text-align: justify;
+	text-decoration: underline;
+
+}
+
+#keterangan_gambar {
+	text-align: center;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+.tulisan_kecil2 {
+	font-size: 10px;
+	color: grey;
+	font-style: italic;
+	text-align: center;
+}
+
+img {
+	align-items: 
+	align-self: center;
+}
+
+strong.bold_hitam {
+	font-size: 50px;
+
+}

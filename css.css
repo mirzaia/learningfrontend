@@ -1,0 +1,257 @@
+div {
+	padding: 16px; 
+	border: 10px solid red;
+	margin: 20px;
+	width: 300px;
+	height: 50px;
+	text-align: center;
+
+	background-color: red;
+}
+
+section {
+	display: block;
+}
+.boxsatu {
+	border: 10px solid orange;
+
+}
+
+.boxdua {
+	border: 10px dotted orange;
+
+}
+
+.boxtiga {
+	border: 10px dashed orange;
+
+}
+
+.boxempat {
+	border: 10px double orange;
+
+}
+
+.boxlima {
+	border: 10px groove orange;
+
+}
+
+.csstiga {
+	-o-text-shadow: 2px 2px 4px red;
+	-webkit-text-shadow: 2px 2px 4px red;
+	-moz-text-shadow: 2px 2px 4px red;
+	-ms-text-shadow: 2px 2px 4px red;
+	text-shadow: 2px 2px 4px red;
+}
+
+.csstigadua {
+	-webkit-box-shadow: -4px -4px 6px 8px;
+	-o-box-shadow: -4px -4px 6px 8px;
+	-moz-box-shadow: -4px -4px 6px 8px;
+	-ms-box-shadow: -4px -4px 6px 8px;
+	box-shadow: -4px -4px 6px 8px;
+}
+.boxenam {
+	border: 10px ridge orange;
+
+}
+
+.boxtujuh {
+	border: 10px inset orange;
+
+
+}
+
+.boxdelapan {
+	border: 10px outset orange;
+}
+.upper {
+	text-transform: uppercase;
+}
+
+.lower {
+	text-transform: lowercase;
+}
+
+.smallcaps {
+	font-variant: small-caps;
+}
+
+.cap {
+	text-transform: capitalize;
+}
+
+.alamat {
+	font: italic small-caps 1em/14px arial;
+}
+
+.rumah {
+	font: italic capitalize 2em/20px Verdana;
+}
+
+.contoh1 {
+	font: italic bold uppercase 20px/14px Times_new_roman;
+	color: #0000FF;
+}
+
+.contoh2 {
+	font: italic bold lowercase 24px/20px arial;
+	color: #00FF00;
+}
+
+.contoh3 {
+	font: italic normal normal 40px/25px Verdana;
+	color: #FF0000;
+}
+
+.contoh4{
+	color: rgba(255, 0, 0, 0.8);
+	letter-spacing: -4px;
+}
+
+.kalimat {
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: hsl(45, 100%, 50%);
+}
+
+.kalimat2 {
+	letter-spacing: -2px;
+	word-spacing: -2px;
+	color: hsl(90, 50%, 25%);
+}
+
+.baris1 {
+			background-color: hsl(90, 50%, 30%);
+			width: 25px;
+		}
+
+		.baris2 {
+			background-color: hsl(200, 50%, 40%);
+			width: 75px;
+		}
+
+		.baris3 {
+			background-color: hsl(150, 50%, 40%);
+			width: 125px;
+		}
+
+.tulisanform {
+	font-weight: 800;
+	color: black;
+	text-decoration: underline;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+.captcha {
+font-weight: 800;
+	color: black;
+	text-decoration: underline;
+	text-transform: capitalize;
+	text-align: left;	
+}
+
+.captchaimg {
+	text-align: left;
+	width: 250px;
+	height: 125px;
+}
+
+.judulform {
+	text-align: left;
+	text-decoration: underline;
+	font-family: Arial;
+	font-size: 24px;
+	color: blue;
+	text-transform: uppercase;
+}
+
+.boxdaftar {
+	width: 100px;
+	height: 50px;
+	color: white;
+	font-family: Arial;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 800;
+	background-color: blue;
+}
+
+.roundedone {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+
+}
+
+.roundedtwo {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+
+}
+
+.roundedthree {
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+
+}
+
+.roundedfour {
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+
+}
+
+.roundedoption {
+	border-top-left-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-o-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	-ms-border-top-left-radius: 8px;
+
+	border-top-right-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	-o-border-top-right-radius: 12px;
+	-moz-border-top-right-radius: 12px;
+	-ms-border-top-right-radius: 12px;
+
+	border-bottom-left-radius: 16px;
+	-webkit-border-bottom-left-radius: 16px;
+	-o-border-bottom-left-radius: 16px;
+	-moz-border-bottom-left-radius: 16px;
+	-ms-border-bottom-left-radius: 16px;
+	
+	border-bottom-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-o-border-bottom-right-radius: 20px;
+	-moz-border-bottom-right-radius: 20px;
+	-ms-border-bottom-right-radius: 20px;
+}
+
+.kolom {
+
+	column-count: 4 ;
+	-webkit-column-count: 4 ;
+	-o-column-count: 4 ;
+	-moz-column-count: 4 ;
+	-ms-column-count: 4 ;
+
+	column-rule: 3 ;
+	-webkit-column-rule: 3 ;
+	-moz-column-rule: 3 ;
+	-o-column-rule: 3 ;
+	-ms-column-rule: 3 ;
+}

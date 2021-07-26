@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Belajar JavaScript</title>
+  
+<script>
+var nilai = "global";
+function test() {
+   var nilai = "lokal";
+   var nilai_lokal = "duniailkom";
+   tanpa_var = "no_scope"; //akan menjadi global variabel!!
+   console.log(nilai);
+   }
+ 
+test(); // print: lokal
+console.log(nilai); // print: global
+console.log(tanpa_var); //print: no_scope (bisa diakses)
+console.log(nilai_lokal); //error, karena nilai_lokal adalah lokal variabel
+</script>
+  
+</head>
+<body>
+<h1>Belajar JavaScript</h1>
+<p> Saya sedang belajar JavaScript di duniailkom.com </p>
+</body>
+</html>

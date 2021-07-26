@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Belajar Pembuatan Table dalam HTML
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+
+<table>
+	<colgroup>
+		<col class="baris1">
+		<col class>
+	</colgroup>
+	<caption> Contoh judul Tabel</caption>
+	<thead>
+	<tr>
+		<th> No </th>
+		<th> Nama </th>
+		<th> Keterangan</th>
+		<th> TTD</th>
+	</tr>	
+	</thead>
+	<tbody>
+	<tr>
+		<td>1</td>
+		<td>romlah</td>
+		<td> Sakit </td>
+		<td> ttd 1</td>
+	</tr>
+	<tr>
+		<td> 2</td>
+		<td> Panjul</td>
+		<td> acara keluarga</td>
+		<td> ttd 2</td>
+	</tr>	
+	</tbody>
+	<tfoot>
+	<tr>
+		<td> Footer</td>
+		<td> Footer</td>
+		<td> Footer </td>
+		<td> Footer</td>
+	</tr>
+	
+	</tfoot>
+</table>
+
+<form action="form.php" method="post">
+	<fieldset>
+	<legend class="judulform">
+		daftar akun baru
+	</legend>
+	<p class="tulisanform">
+		username
+	</p>
+	<input type="text" name="username" value=""> 
+	<p class="tulisanform">
+		password
+	</p>
+	<input type="password" name="password" value=""> 
+	<p class="tulisanform">
+		konfirmasi password
+	</p>
+	<input type="password" name="ulangpassword" value="">
+	<p class="tulisanform">
+		Jenis Kelamin:
+	</p>
+	<label for="pria">
+	<input type="radio" name="jenis_kelamin" id="pria"> <span style="color: red; font-family: verdana; text-transform: capitalize; font-size: 16px;"> pria
+	</span>
+	</label>
+	<label for="wanita">
+	<input type="radio" name="jenis_kelamin" id="wanita"> <span style="color: red; font-family: verdana; text-transform: capitalize; font-size: 16px;"> wanita
+	</span>
+	</label>
+	</fieldset>
+	<fieldset>
+		<legend class="captcha"> 
+		CAPTCHA
+	 </legend>
+	<img class="captchaimg" src="captcha1.png"><br>
+	<input type="text" name="cekrobot" value="">
+	<p>
+		<table>
+			<tr>
+				<td> <button type="submit" class="boxdaftar"> SUBMIT </button></td>
+				<td> <button type="reset" class="boxdaftar" disabled="disabled"> RESET </button></td>
+			</tr>
+		</table>
+
+	</p>
+	</fieldset>
+	<textarea rows="10" cols="20" maxlength="16">
+		
+	</textarea>
+	<p></p>
+	<input type="text" name="contohaja" size="10" maxlength="4"> <br>
+	<input type="text" name="contohaja2" size="16" maxlength="10"> <p></p>
+	<input type="file" name="file_musik" accept="audio/*">
+	<input type="file" name="file_gambar" accept="image/*">
+	<input type="file" name="file_video" accept="video/*">
+	<input type="image" name="gambar_pemandangan" alt="gambar pemandangan" src="fotobromo.jpg">
+</form>
+
+</body>
+</html>
