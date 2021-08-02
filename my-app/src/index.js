@@ -37,6 +37,7 @@ class Board extends React.Component { // BOARD COMPONENT
     super(props);
     this.state = {
       squares: Array(9).fill(null), // declare the square array
+      xIsNext: true, // To set the first move always with 'x'
     };
   } //To collect data from multiple children, or to have two child components 
   //communicate with each other, you need to declare the shared state in their 
@@ -68,13 +69,26 @@ class Board extends React.Component { // BOARD COMPONENT
 // Here's what happen when click the square
 handleClick(i) {
   const squares = this.state.squares.slice(); // slice() is called to create a copy of the squares array to modify
-  squares[i] = 'X'; // -instead modifying existing array, because immutability is important
-  this.setState({squares: squares});
+  // -instead modifying existing array, because immutability is important
+  squares[i] = this.state.xIsNext ? 'X' : 'O'; // Each time a player moves, the xIsNext (which is a boolean) will be flipped
+  // to determine which player goes next
+  this.setState({
+    squares: squares,
+  xIsNext: !this.state.xIsNext,});
 }
 
 
+
   render() {
-    const status = 'Next player: X';
+    const winner = calculateWinner(this.state.squares); // memanggil method untuk menentukan pemenang
+    let status;
+    if (winner){ 
+      status = 'Winner: ' + winner;
+    } else {
+      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+    }
+    
+    
     return (
       <div>
         <div className="status">{status}</div>
@@ -130,7 +144,26 @@ ReactDOM.render(
 reportWebVitals();
 
 
+function calculateWinner(squares) { // method untuk menentukan pemenang
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
 
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }
+  return null;
+}
 
 
 // NOTES:
