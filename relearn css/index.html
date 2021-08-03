@@ -1,0 +1,120 @@
+<html>
+
+<!-- The viewport is the user's visible area of a web page.
+The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
+
+Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.
+
+Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.
+
+This was not perfect!! But a quick fix.
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+
+1. Do NOT use large fixed width elements - For example, if an image is displayed at a width wider than the viewport it can cause the viewport to scroll horizontally. Remember to adjust this content to fit within the width of the viewport.
+
+2. Do NOT let the content rely on a particular viewport width to render well - Since screen dimensions and width in CSS pixels vary widely between devices, content should not rely on a particular viewport width to render well.
+
+3. Use CSS media queries to apply different styling for small and large screens - 
+Setting large absolute CSS widths for page elements will cause the element to be too wide for the 
+viewport on a smaller device. Instead, consider using relative width values, such as width: 100%. 
+Also, be careful of using large absolute positioning values. It may cause the element to fall outside 
+the viewport on small devices.
+-->
+
+<head>
+<link rel="stylesheet" href="index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<!--CSS GRID
+An HTML element becomes a grid container when its display property is set to grid or inline-grid.
+All direct children of the grid container automatically become grid items.
+
+Grid Spaces
+The spaces between each column/row are called gaps. You can adjust the gap size by using one of the following properties:
+grid-column-gap
+grid-row-gap
+grid-gap
+
+Grid Lines
+The lines between columns are called column lines.
+The lines between rows are called row lines.
+Refer to line numbers when placing a grid item in a grid container:
+
+-->
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+</div>
+
+<!-- HTML Picture element 
+The HTML <picture> element gives web developers more flexibility in specifying image resources.
+
+    The most common use of the <picture> element will be for images used in responsive designs. 
+Instead of having one image that is scaled up or down based on the viewport width, multiple images 
+can be designed to more nicely fill the browser viewport.
+
+The <picture> element works similar to the <video> and <audio> elements. You set up different sources, 
+and the first source that fits the preferences is the one being used:
+
+You should also define an <img> element for browsers that do not support the <picture> element.
+
+THE RULE ALSO APPLIED TO THE <VIDEOS> TAG
+-->
+<picture>
+    <source srcset="" media="(max-width: 400px)">
+    <source srcset="" media="(max-width: 400px)">
+    <source srcset="" media="(max-width: 400px)">
+</picture>
+
+<!-- The columns inside a row are all floating to the left, and are therefore 
+    taken out of the flow of the page, and other elements will be placed as if the columns do not exist.
+    To prevent this, we will add a style that clears the flow (in the css)-->
+
+<div class="row"> 
+
+   <!-- First Column: The Left Taskbar--> 
+  <div class="col-3 col-s-3 menu">
+      <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </div>
+
+  <!-- Second Column: Main Menu -->
+  <div class="col-6 col-s-9">
+      <h1></h1>
+      <p></p>
+  </div>
+  
+  <!-- Third Column: Right Navbar-->
+  <div class="col-9 col-s-12">
+      <div class="aside">
+          <h2></h2>
+          <p></p>
+          <h2></h2>
+          <p></p>
+          <h2></h2>
+          <p></p>
+      </div>
+  </div> 
+</div>
+
+</body>
+
+</html>
